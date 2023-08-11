@@ -93,6 +93,49 @@ export function howManyTimes(array,string) {
   return count
   
 }
+
+
+
+
 export function greatestProduct(array) {
 
+let result ;
+  array.flatMap(innerArray => innerArray).forEach(element =>{
+    if (element == true ){
+        result = 1
+      }else{
+        result = 0
+      }
+  })
+// const isEqualToOne = (item) => item == 1
+// let result;
+// for (let i of array){
+// result = i.every(isEqualToOne)
+// if (result == true ){
+//   result = 1
+// }else{
+//   result = 0
+// }
+// }
+
+return result
+
+
+
+//  let result;
+//   for (let i of array){
+//     for(let j of i){
+//       if(j == 1){
+//         result = 1
+//       }else{
+//         return "esta mal"
+//       }
+//       console.log(j)
+//     }
+//     console.log(i)
+//   }
+//   console.log(result)
+//   return result
 }
+
+console.log(greatestProduct(matrix))
